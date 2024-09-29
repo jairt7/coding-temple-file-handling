@@ -10,6 +10,9 @@ def list_directory_contents(path):
     else:
         try:
             print(os.listdir(path))
+            # could also do:
+            # for line in path:
+                # print(line)
         except Exception as e:
             print(f"An error occured: {e}")
     
